@@ -1,1 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" type="icon/image" href="logo_winet.png">
+<link rel="stylesheet" href="style.css">
+<title>WINET HTML5 + CSS3 SOLUTIONS</title>
+<meta name="description" content="A comprehensive single-file HTML5 + CSS3 starter
+showcasing semantics, responsive layouts, animations, components, and accessibility." />
+</head>
+<body>
+<!-- ========================= HEADER ========================= -->
+<header>
+<div class="container nav">
+<div class="flex" style="align-items:center; gap:.6rem">
+<span class="icon" aria-hidden="true">★</span>
+<a class="brand" href="#home">Massive Template</a>
+</div>
+    <input type="checkbox" id="nav-toggle" aria-label="Toggle menu" />
+<label for="nav-toggle" class="hamburger" aria-hidden="true">☰ Menu</label>
+<nav>
+<ul aria-label="Primary navigation">
+<li><a href="#features">Features</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#" id="theme-toggle" role="button">Toggle Theme</a></li>
+</ul>
+</nav>
+<div class="menu">
+<a href="#features">Features</a>
+<a href="#components">Components</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+<a href="#" id="theme-toggle-mobile">Toggle Theme</a>
+</div>
+</div>
+</header> <!-- ========================= HERO ========================= -->
+<section id="home" class="hero">
+<div class="blob"></div>
+<div class="blob b2"></div>
+<div class="container">
+<div class="stack">
+<span class="badge">HTML5 · CSS3 · A11y · Responsive</span>
+<h1>Build modern, beautiful, accessible websites fast.</h1>
+<p>Use this single-file template to kickstart projects. It demonstrates semantic structure,
+grid and flex layouts, pure-CSS tabs and modals, forms, a gallery, tables, and more—styled with
+custom properties and fluid spacing.</p>
+<div class="hero-cta">
+<a class="btn" href="#components">Explore Components</a>
+<a class="btn outline" href="#pricing">See Pricing</a>
+</div>
+</div>
+</div>
+</section> <!-- ========================= FEATURES =========================
+--> <section id="features" class="features container">
+<h2>Key Features</h2>
+<div class="grid grid-3">
+<article class="card feature">
+<div class="icon" aria-hidden="true">1</div>
+<h3>Semantic HTML5</h3>
+<p>Sections, articles, nav, header, footer, figures, and accessible patterns.</p>
+</article>
+<article class="card feature">
+<div class="icon" aria-hidden="true">2</div>
+<h3>Responsive Layouts</h3>
+<p>CSS Grid and Flexbox with fluid typography and container-based widths.</p>
+</article>
+<article class="card feature">
+<div class="icon" aria-hidden="true">3</div>
+<h3>Modern CSS</h3>
+<p>Custom properties, color-mix, :has-friendly patterns, and keyframe animations.</p>
+</article>
+</div>
+</section> <!-- ========================= COMPONENTS
+========================= --> <section id="components" class="container stack">
+<h2>Components</h2><!-- Tabs -->
+<div class="tabs stack">
+<div class="tab-list" role="tablist" aria-label="Sample tabs">
+<input type="radio" id="tab1" name="tabs" checked>
+<label for="tab1" role="tab" aria-controls="panel1">Overview</label>
+<input type="radio" id="tab2" name="tabs">
+<label for="tab2" role="tab" aria-controls="panel2">Gallery</label>
+<input type="radio" id="tab3" name="tabs">
+<label for="tab3" role="tab" aria-controls="panel3">Stats</label>
+</div>
+<div class="tab-panels">
+<div id="panel1" class="panel1" role="tabpanel" aria-labelledby="tab1">
+<div class="prose">
+<h3>Why this template?</h3>
+<p>It accelerates development while keeping things readable and accessible. Copy
+sections as needed, and ship faster without a heavy framework.</p>
+<ul>
+<li>Drop-in, single file.</li>
+<li>Pure HTML + CSS components.</li>
+<li>Ready for dark/light themes.</li>
+</ul>
+</div>
+</div>
+<div id="panel2" class="panel2" role="tabpanel" aria-labelledby="tab2">
+<div class="grid gallery">
+<figure><img alt="Gradient sample"
+src="https://picsum.photos/seed/a/600/400"><figcaption>Abstract A</figcaption></figure>
+<figure><img alt="Gradient sample"
+src="https://picsum.photos/seed/b/600/400"><figcaption>Abstract B</figcaption></figure>
+<figure><img alt="Gradient sample"
+src="https://picsum.photos/seed/c/600/400"><figcaption>Abstract C</figcaption></figure>
+<figure><img alt="Gradient sample"
+src="https://picsum.photos/seed/d/600/400"><figcaption>Abstract D</figcaption></figure>
+</div>
+</div>
+<div id="panel3" class="panel3" role="tabpanel" aria-labelledby="tab3">
+<div class="grid grid-3">
+<div class="card pad">
+<div class="badge">Performance</div>
+<p class="price" aria-label="98 percent">98%</p>
+<progress value="98" max="100"></progress>
+</div>
+<div class="card pad">
+<div class="badge">Accessibility</div>
+<p class="price" aria-label="100 percent">100%</p>
+<progress value="100" max="100"></progress>
+</div>
+<div class="card pad">
+<div class="badge">Best Practices</div>
+<p class="price" aria-label="96 percent">96%</p>
+<progress value="96" max="100"></progress>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Cards -->
+<div class="grid cards">
+<article class="card">
+<img src="https://picsum.photos/seed/card1/800/500" alt="Sample card image">
+<div class="pad">
+<h3>Card Title</h3>
+<p>Concise description of the card content with an optional <span class="tip"
+data-tip="Tooltips via CSS only!">tooltip</span>.</p>
+<a class="btn" href="#modal-demo">Open Modal</a>
+</div>
+</article>
+<article class="card">
+<img src="https://picsum.photos/seed/card2/800/500" alt="Sample card image">
+<div class="pad">
+<h3>Another Card</h3>
+<p>Showcasing hover states, focus rings, and accessible color contrast.</p>
+<a class="btn outline" href="#">Learn More</a>
+</div>
+</article>
+<article class="card">
+<img src="https://picsum.photos/seed/card3/800/500" alt="Sample card image">
+<div class="pad">
+<h3>Media + Content</h3>
+<p>Images scale responsively and preserve aspect ratio using
+<code>aspect-ratio</code>.</p>
+<a class="btn" href="#">Get Started</a>
+</div>
+</article>
+</div>
+<!-- Accordion -->
+<div class="stack">
+<h3>FAQ (Accordion)</h3>
+<details>
+<summary>Is this really just one file?</summary>
+<p>Yes. Copy it into your project and edit. External assets (images) are hotlinked for demo
+only.</p>
+</details>
+<details>
+<summary>How do I switch themes?</summary>
+<p>Click <em>Toggle Theme</em> in the nav. It flips the <code>data-theme</code> attribute
+on <code>html</code>.</p>
+</details>
+<details>
+<summary>Can I use it commercially?</summary>
+<p>Absolutely. Consider this public domain for your projects. Attribution appreciated but not
+required.</p>
+</details>
+</div>
+<!-- Table -->
+<div class="stack">
+<h3>Responsive Table</h3>
+<div class="card" style="overflow:auto">
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Notes</th>
+<th>Updated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dark / Light Theme</td>
+<td><span class="badge">Done</span></td>
+<td>Uses <code>data-theme</code> attribute + CSS vars</td>
+<td>Today</td>
+</tr>
+<tr>
+<td>Pure CSS Tabs</td>
+<td><span class="badge">Done</span></td>
+<td>Radio inputs + sibling selectors</td>
+<td>Today</td>
+</tr>
+<tr>
+<td>Modal</td>
+<td><span class="badge">Done</span></td>
+<td><code>:target</code> technique</td>
+<td>Today</td>
+</tr>
+<tr>
+<td>Animations</td>
+<td><span class="badge">Done</span></td>
+<td>Keyframes for floating blobs</td>
+<td>Today</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section> <!-- ========================= PRICING =========================
+--> <section id="pricing" class="pricing container stack">
+<h2>Simple Pricing</h2>
+<div class="grid grid-3">
+<article class="card plan">
+<div class="pad stack">
+<h3>Starter</h3>
+<p class="price">₦0</p>
+<ul>
+<li>Single page</li>
+<li>Email support</li>
+<li>Community access</li>
+</ul>
+<a class="btn" href="#">Choose</a>
+</div>
+</article>
+<article class="card plan highlight">
+<div class="pad stack">
+<h3>Pro</h3>
+<p class="price">₦9,500</p>
+<ul>
+<li>Multi-page</li>
+<li>Priority support</li>
+<li>Components library</li>
+</ul>
+<a class="btn" href="#">Choose</a>
+</div>
+</article>
+<article class="card plan">
+<div class="pad stack">
+<h3>Enterprise</h3>
+<p class="price">Contact</p>
+<ul>
+<li>Custom design</li>
+<li>24/7 support</li>
+<li>SLA + onboarding</li>
+</ul>
+<a class="btn" href="#">Contact Sales</a>
+</div>
+</article>
+</div>
+</section> <!-- ========================= CONTACT =========================
+--> <section id="contact" class="container stack" aria-labelledby="contact-heading">
+<h2 id="contact-heading">Contact Us</h2>
+<div class="grid grid-2">
+<form class="card pad" action="#" method="post" novalidate>
+<div class="inline">
+<div>
+<label for="name">Name</label>
+<input id="name" name="name" autocomplete="name" required />
+</div>
+<div>
+<label for="email">Email</label>
+<input id="email" type="email" name="email" autocomplete="email" required />
+</div>
+</div>
+<div>
+<label for="topic">Topic</label>
+<select id="topic" name="topic">
+<option>General</option>
+<option>Support</option>
+<option>Sales</option>
+</select>
+</div>
+<div>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" minlength="10" placeholder="How
+can we help?" required></textarea>
+</div>
+<label style="display:flex; align-items:center; gap:.5rem">
+<input type="checkbox" required />
+<span>I agree to the <a href="#">terms</a>.</span>
+</label>
+<button class="btn" type="submit">Send</button>
+</form><aside class="card pad stack">
+<h3>Office</h3>
+<address>WINET Solutions<br> 24 Example Street<br> Lagos, Nigeria</address>
+<p><strong>Hours:</strong> Mon–Sat, 9:00–17:00</p>
+<h3>Subscribe</h3>
+<form action="#" method="post">
+<label for="sub">Email</label>
+<input id="sub" type="email" placeholder="you@example.com" required />
+<button class="btn" type="submit">Join Newsletter</button>
+</form>
+</aside>
+</div>
+</section> <!-- ========================= MODAL ========================= -->
+<div id="modal-demo" class="modal" role="dialog" aria-modal="true"
+aria-labelledby="modal-title">
+<div>
+<div class="flex" style="justify-content:space-between; align-items:center">
+<h3 id="modal-title">CSS-Only Modal</h3>
+<a class="btn outline" href="#">Close</a>
+</div>
+<p class="prose">This modal uses the <code>:target</code> pseudo-class—no JavaScript
+required.</p>
+</div>
+</div> <!-- ========================= FOOTER ========================= -->
+<footer>
+<div class="container flex" style="justify-content:space-between; align-items:center;
+flex-wrap:wrap">
+<p>© <span id="year"></span> Massive Template. Built with ❤️ using HTML5 + CSS3.</p>
+<p>
+<a href="#home">Back to top</a>
+</p>
+</div>
+</footer> <!-- ========================= MINIMAL JS (optional helpers)
+========================= --> <script src="java.js">
 
+</script></body>
+</html>
